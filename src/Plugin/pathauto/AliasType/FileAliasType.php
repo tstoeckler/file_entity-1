@@ -34,7 +34,7 @@ class FileAliasType extends EntityAliasTypeBase implements AliasTypeBatchUpdateI
    * {@inheritdoc}
    */
   public function defaultConfiguration() {
-    return array('default' => array('files/[file:name]')) + parent::defaultConfiguration();
+    return array('default' => array('/files/[file:name]')) + parent::defaultConfiguration();
   }
 
   /**
